@@ -3,9 +3,8 @@ const Context = React.createContext()
 
 function ContextProvider({children}) {
     const [allProducts, setAllProducts] = useState([])
-    const [cartItems, setCartItems] = useState([])
+    const [cartItems, setCartItems] = useState(JSON.parse(localStorage.getItem("cart")) || [])
     const [cart_Total, setCart_Total] = useState(0)
-    const ref = useRef(null)
     const url = "https://picsum.photos/v2/list/?page=7&limit=8"
     useEffect(() => {
        fetch(url)
@@ -54,7 +53,7 @@ function ContextProvider({children}) {
 
        })
       }
-      console.log(cartItems)
+      localStorage.setItem("cart", JSON.stringify(cartItems))
    }
 
      const updateQty = (product) => {
@@ -64,8 +63,8 @@ function ContextProvider({children}) {
             
          })
     setCartItems(updatedCart)
-    console.log(cartItems)
-     }
+    localStorage.setItem("cart", JSON.stringify(cartItems))
+  }
 
    const deleteQty = (product) => {
           setCart_Total(prev => prev - product.price)
@@ -73,6 +72,8 @@ function ContextProvider({children}) {
             return item.id === product.id ? {...item, Qty: item.Qty - 1} : item
           })
         setCartItems(updatedCart)
+        localStorage.setItem("cart", JSON.stringify(cartItems))
+
    }
 
     const calculateTotal = (item) => {
@@ -83,6 +84,8 @@ function ContextProvider({children}) {
     const removeFromCart = (item, id) => {
       calculateTotal(item)
       setCartItems(prevstate => prevstate.filter(product => product.id !== id ))
+      localStorage.setItem("cart", JSON.stringify(cartItems))
+
     }
 
   return (
