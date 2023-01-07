@@ -1,5 +1,5 @@
+/* eslint-disable no-undef */
 import React, {useState, useEffect} from 'react'
-import {M}from "./materialize/materialize"
 const Context = React.createContext()
 
 function ContextProvider({children}) {
@@ -60,12 +60,14 @@ function ContextProvider({children}) {
         return [...prevCart, {...newItem, Qty: 1}]
 
        })
+
        */
       shoppingCart.push({...newItem, Qty: 1})
       setCart_Total(prev => prev + newItem.price)
       localStorage.setItem("cart", JSON.stringify(shoppingCart))
       }
-      M.toast({html: 'added to cart!'})
+      // eslint-disable-next-line no-undef
+      M.toast({html: 'Item added to cart!'})
    }
 
      const updateQty = (product) => {
@@ -97,6 +99,7 @@ function ContextProvider({children}) {
       calculateTotal(item)
       const updatedCart =  shoppingCart.filter(product => product.id !== id )
       localStorage.setItem("cart", JSON.stringify(updatedCart))
+      M.toast({html: 'Item removed from cart!', classes: 'rounded'})
 
     }
 
