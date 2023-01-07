@@ -1,4 +1,5 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useState, useEffect} from 'react'
+import {M}from "./materialize/materialize"
 const Context = React.createContext()
 
 function ContextProvider({children}) {
@@ -64,6 +65,7 @@ function ContextProvider({children}) {
       setCart_Total(prev => prev + newItem.price)
       localStorage.setItem("cart", JSON.stringify(shoppingCart))
       }
+      M.toast({html: 'added to cart!'})
    }
 
      const updateQty = (product) => {
