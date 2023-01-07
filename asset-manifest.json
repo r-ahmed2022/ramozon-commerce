@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/%7Bramozon-commerce%7D/static/css/main.ea70ef2f.css",
+    "main.js": "/%7Bramozon-commerce%7D/static/js/main.89962393.js",
+    "static/js/787.8b609e3b.chunk.js": "/%7Bramozon-commerce%7D/static/js/787.8b609e3b.chunk.js",
+    "index.html": "/%7Bramozon-commerce%7D/index.html",
+    "main.ea70ef2f.css.map": "/%7Bramozon-commerce%7D/static/css/main.ea70ef2f.css.map",
+    "main.89962393.js.map": "/%7Bramozon-commerce%7D/static/js/main.89962393.js.map",
+    "787.8b609e3b.chunk.js.map": "/%7Bramozon-commerce%7D/static/js/787.8b609e3b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea70ef2f.css",
+    "static/js/main.89962393.js"
+  ]
+}
