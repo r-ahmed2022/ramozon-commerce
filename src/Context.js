@@ -11,7 +11,6 @@ function ContextProvider({children}) {
       total += item.Qty * item.price
     })
     const [cart_Total, setCart_Total] = useState(total)
-    console.log(total)
     const url = "https://picsum.photos/v2/list/?page=7&limit=8"
     useEffect(() => {
        fetch(url)
