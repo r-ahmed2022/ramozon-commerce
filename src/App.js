@@ -8,9 +8,12 @@ function App() {
   return (
     <div className="wrapper">
        <Header />
+
       <Routes>
-          <Route exact path="/" element={ <Products />} />
-          <Route  path="/cart" element={<Cart />} />
+           <Route exact path="/" element={ <Products />} />
+           <Route  path="/cart" element={<Cart />} />
+           <Route path='*' element={<Products/>} />
+
       </Routes>
     </div>
   );
