@@ -3,8 +3,8 @@ import CartItem from "./components/CartItem"
 import {Context}  from "./Context"
 
 export default function Cart(props) {
-  const {cartItems, cart_Total} = useContext(Context)
-   const cartArray = cartItems.map((item) => {
+  const {shoppingCart, cart_Total} = useContext(Context)
+   const cartArray = shoppingCart.map((item) => {
             return <CartItem key={item.id} item={item}/>
    })
   return (
