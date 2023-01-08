@@ -16,10 +16,13 @@ export default function Product(props) {
                 <i className="small material-icons addcart" onClick={() => addToCart(props.product)}>add_shopping_cart</i>
            </div>
          }
+                <div className="rating">
+                  <span className="fa fa-star checked"></span>
+                  <span>{props.product.rating.rate}</span>
+                </div>
             <div className="product-category">
                 <span>{props.product.category}</span>
-                <span className="fa fa-star checked"></span>
-                <span>{props.product.rating.rate}</span>
+               
              </div>
            <img className="product-item-img" src={props.product.image} alt="product" />
                <div className="product-info">

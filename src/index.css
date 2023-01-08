@@ -70,7 +70,12 @@ html, body {
   padding: .2em .7em;
   position: relative;
   cursor: pointer;
+  position: relative;
+}
 
+.rating {
+  position: absolute;
+  right: 2em;
 }
 
 .product-item-img {
@@ -281,6 +286,9 @@ html, body {
     height: auto;
     flex-direction: column;
    }
+   .rating {
+      right: 3em;
+  }
 
    .cart-item-card  {
     flex-direction: column;
