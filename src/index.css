@@ -13,7 +13,7 @@ html, body {
   height: auto;
   margin: 1em auto;
   scroll-behavior: auto;
-  background: #ccc;
+  background: #fff;
 }
 
 .navbar {
@@ -33,7 +33,7 @@ html, body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    grid-gap: .7em;
+    grid-gap: .6em;
 }
 
 .total {
@@ -70,13 +70,49 @@ html, body {
   padding: .2em .7em;
   position: relative;
   cursor: pointer;
+
 }
 
 .product-item-img {
-  width: 90%;
-  height: 100%;
+  width: 65%;
+  height: auto;
   border-radius: 1.5em;
+  object-fit:fill;
+  box-shadow: 0px 2px 10px 10px #fff;
+}
 
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-category {
+  font-weight: 700;
+  border-bottom: 2px solid  #1c1c1c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.product-rating {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checked {
+  color: orange;
+
+
+}
+
+.product-title {
+  font-weight: 500;
+  font-style: italic;
+  font-size: .8em;
 }
 
 .bottom-div {
@@ -93,13 +129,13 @@ html, body {
 }
 
 .product_price {
-  font-size: 1.5em;
-  display: -inline-block;
+  font-size: 1em;
+  display: block;
   padding: .5em .8em;
   background: #1c1c1c;
   color: #fff;
-  border-radius: 50%;
-   margin-top: .2em;
+  border-radius: 40%;
+   margin-top: .3em;
 }
 
 .editqty {
@@ -116,14 +152,14 @@ html, body {
 
 .hover-div {
   position: absolute;
-  top: .5em;
+  top: 1em;
  }
 
 .heart {
   color: red;
   font-weight: bold;
   cursor: pointer;
-  margin: 0 3em;
+  margin: 0 2em;
 }
 
 .addcart {
@@ -182,7 +218,7 @@ html, body {
 .cart-price {
  display: flex;
  flex-direction: column;   
- align-self: baseline;
+ align-items: center;
 }
 
 
@@ -230,7 +266,7 @@ html, body {
   }
 
   .product-item {
-    height: 80%; 
+    height: auto; 
   }
 
   .home h3 {
@@ -239,5 +275,16 @@ html, body {
 
   .hover-div {
     top: 1em;
+   }
+   .cart {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+   }
+
+   .cart-item-card  {
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
    }
 }

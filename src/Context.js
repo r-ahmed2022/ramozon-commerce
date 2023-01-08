@@ -11,7 +11,8 @@ function ContextProvider({children}) {
       total += item.Qty * item.price
     })
     const [cart_Total, setCart_Total] = useState(total)
-    const url = "https://picsum.photos/v2/list/?page=7&limit=8"
+    // https://picsum.photos/v2/list/?page=7&limit=8
+    const url = "https://fakestoreapi.com/products"
     useEffect(() => {
        fetch(url)
        .then(response => response.json())
@@ -20,7 +21,6 @@ function ContextProvider({children}) {
            return {
                ...photo ,
                isFavorite: false, 
-               price: Math.ceil(Math.random() * 25),
                
            }
         })
