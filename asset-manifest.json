@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ramozon-commerce/static/css/main.93752579.css",
-    "main.js": "/ramozon-commerce/static/js/main.20aa4553.js",
+    "main.css": "/ramozon-commerce/static/css/main.1308802f.css",
+    "main.js": "/ramozon-commerce/static/js/main.7eeeb06e.js",
     "static/js/787.8b609e3b.chunk.js": "/ramozon-commerce/static/js/787.8b609e3b.chunk.js",
     "index.html": "/ramozon-commerce/index.html",
-    "main.93752579.css.map": "/ramozon-commerce/static/css/main.93752579.css.map",
-    "main.20aa4553.js.map": "/ramozon-commerce/static/js/main.20aa4553.js.map",
+    "main.1308802f.css.map": "/ramozon-commerce/static/css/main.1308802f.css.map",
+    "main.7eeeb06e.js.map": "/ramozon-commerce/static/js/main.7eeeb06e.js.map",
     "787.8b609e3b.chunk.js.map": "/ramozon-commerce/static/js/787.8b609e3b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93752579.css",
-    "static/js/main.20aa4553.js"
+    "static/css/main.1308802f.css",
+    "static/js/main.7eeeb06e.js"
   ]
 }
